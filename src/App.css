@@ -168,39 +168,116 @@
 
 .center-panel-playlist{
     height: 50%;
-    width: 85%;
-    border: 3px solid;
-    margin-top: 5%;
+    width: 100%;
+    
+    margin-top: 2%;
     overflow: scroll;
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    
 }
 .center-panel-playlist table{
     width: 100%;
+    font-size: medium;
     
 }
+.center-panel-playlist table thead {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
 .center-panel-playlist table th{
-    height: 40px;
+    height: 20px;
     font-weight: bold;
+    background-color: rgb(46, 12, 12);
 }
 .center-panel-playlist table tr{
     height: 25px;
 }
+
 .center-panel-playlist table th,.center-panel-playlist table td{
     padding: 12px 15px;
 }
+
 .center-panel-playlist table th:nth-child(1),
 .center-panel-playlist table td:nth-child(1) {
-    width: 50px; /* Fixed width for first column */
+    width: 30px; /* Fixed width for first column */
+}
+
+.center-panel-playlist table td:nth-child(1) button{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.center-panel-playlist table td:nth-child(1) button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 .center-panel-playlist table th:nth-child(2),
 .center-panel-playlist table td:nth-child(2) {
-    width: 50px; /* Fixed width for second column */
+    width: 40px; /* Fixed width for second column */
 }
 
 .center-panel-playlist table th:nth-child(3),
 .center-panel-playlist table td:nth-child(3) {
-    width: 50px; /* Fixed width for third column */
+    width: 40px; /* Fixed width for third column */
 }
+
+.center-panel-playlist table th:nth-child(4),
+.center-panel-playlist table td:nth-child(4) {
+    width: 40px; /* Fixed width for third column */
+}
+
+.center-panel-playlist table th:nth-child(5),
+.center-panel-playlist table td:nth-child(5) {
+    width: 40px; /* Fixed width for third column */
+}
+
+.center-panel-playlist table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.center-panel-playlist table::-webkit-scrollbar {
+    width: 20px; /* Adjust the width of the scrollbar */
+}
+.center-panel-playlist:-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for the track */
+ }
+
+.center-panel-playlist table::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Slightly visible thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+
+.center-panel-playlist table::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,9 +314,60 @@
 
 .right-panel-playcard{
     
-    background-color: rgb(245, 28, 28);
+    background-color: rgb(150, 19, 19);
     width: 80%;
     margin: 5%;
     border-radius: 15px;
     height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.right-panel-playcard-statusbar{
+    height: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.right-panel-playcard-picture{
+    height: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.right-panel-playcard-picture img{
+    height: 100%;
+    width: 100%;
+}
+
+.right-panel-playcard-slider {
+    width: 80%;
+    height: 10%;
+    justify-content: center;
+}
+
+
+.right-panel-playcard-controls{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+}
+.right-panel-playcard-controls button{
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 45px;
+    height: 45px;
+    font-size: large;
+    cursor: pointer;
+}
+.right-panel-playcard-controls button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+    
