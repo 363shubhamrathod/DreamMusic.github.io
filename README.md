@@ -6,4 +6,4 @@
 ![An example image](x_project_pictures/components.png)
 
 # End Result
-![An example image](x_project_pictures/end_result.png)
+![An example image](x_project_pictures/endResult.png)
